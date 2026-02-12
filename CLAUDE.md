@@ -1,15 +1,15 @@
-# cosilico-ca
+# rac-ca
 
 **THE home for Canadian federal and provincial tax/benefit statute encodings.**
 
-All Canada-specific .cosilico files belong here, NOT in cosilico-engine.
+All Canada-specific .rac files belong here, NOT in rac-compile.
 
 ## Structure
 
 Files organized under `statute/` by act and section:
 
 ```
-cosilico-ca/
+rac-ca/
 ├── statute/                    # All enacted statutes
 │   ├── ITA/                   # Income Tax Act (R.S.C., 1985, c. 1 (5th Supp.))
 │   │   ├── 122.5/             # GST/HST Credit
@@ -72,7 +72,7 @@ cosilico-ca/
 | 19 | Allowance | For spouses/partners of GIS recipients |
 | 22 | Recovery Tax | Clawback for high-income seniors |
 
-## References in .cosilico files
+## References in .rac files
 
 Cross-file references use paths relative to the repo root:
 ```
@@ -105,12 +105,12 @@ For CCB: child under 18 for whom you are primarily responsible.
 
 ## File Types
 
-- `.cosilico` - Executable formulas (compile to Python/JS/WASM)
+- `.rac` - Executable formulas (compile to Python/JS/WASM)
 - `parameters.yaml` - Time-varying values (rates, thresholds, amounts)
 - `tests.yaml` - Validation test cases
 
 ## Related Repos
 
-- **cosilico-lawarchive** - Source document archive (R2) + catalog
-- **cosilico-validators** - Validation against external calculators
-- **cosilico-engine** - DSL compiler and runtime
+- **atlas** - Source document archive (R2) + catalog
+- **rac-validators** - Validation against external calculators
+- **rac-compile** - DSL compiler and runtime
