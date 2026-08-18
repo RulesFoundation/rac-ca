@@ -20,11 +20,6 @@ module:
         for the 2025 T1 return filed in 2026. This module encodes the
         published Schedule 6 parameter/formula surface for the current
         available filing package.
-    source_urls:
-      - https://www.canada.ca/content/dam/cra-arc/formspubs/pbg/5000-s6/5000-s6-25e.pdf
-      - https://www.canada.ca/content/dam/cra-arc/formspubs/pbg/5009-s6/5009-s6-25e.txt
-      - https://www.canada.ca/content/dam/cra-arc/formspubs/pbg/5005-s6/5005-s6-25e.txt
-      - https://www.canada.ca/content/dam/cra-arc/formspubs/pbg/5014-s6/5014-s6-25e.txt
 rules:
   - name: cwb_basic_working_income_exclusion
     kind: parameter
