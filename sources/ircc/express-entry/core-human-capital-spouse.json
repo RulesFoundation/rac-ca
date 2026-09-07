@@ -1,0 +1,118 @@
+{
+  "schema": "ircc-crs-source-candidate/v1",
+  "status": "unsigned-source-candidate; supervised-encoding-blocked",
+  "captured_on": "2026-09-07",
+  "proposed_corpus_citation": "ca/policy/ircc/express-entry/core-human-capital-spouse",
+  "scope": {
+    "included": [
+      "core human-capital age",
+      "recognized education",
+      "assessed official-language benchmarks",
+      "declared qualifying Canadian work experience",
+      "accompanying spouse education, first language and Canadian experience"
+    ],
+    "excluded": [
+      "skill transferability",
+      "additional points",
+      "full CRS total",
+      "raw language-test conversion",
+      "work or credential adjudication",
+      "program eligibility",
+      "invitations",
+      "admission",
+      "historical comparison"
+    ]
+  },
+  "source_dates_note": "Page modification metadata and retrieval dates are retained separately; neither assigns commencement to every provision.",
+  "sources": [
+    {
+      "source_id": "ministerial-instructions",
+      "resolved_url": "https://www.canada.ca/en/immigration-refugees-citizenship/corporate/mandate/policies-operational-instructions-agreements/ministerial-instructions/express-entry-application-management-system/current.html",
+      "page_modified": "2025-03-25",
+      "retrieved_at": "2026-09-07T21:16:21.793929+00:00",
+      "sha256": "44edc0c7169545a4af4bc29da1281eb579d30ce6275d4e92c824da7f3639fc3f",
+      "bytes": 104135
+    },
+    {
+      "source_id": "crs-criteria",
+      "resolved_url": "https://www.canada.ca/en/immigration-refugees-citizenship/services/immigrate-canada/express-entry/check-score/crs-criteria.html",
+      "page_modified": "2026-06-22",
+      "retrieved_at": "2026-09-07T21:16:20.639228+00:00",
+      "sha256": "da188f4d76844d2ffa84287885df928a15e1dcf18e874cf5d97d82412926b204",
+      "bytes": 55261
+    },
+    {
+      "source_id": "crs-calculator",
+      "resolved_url": "https://www.canada.ca/en/immigration-refugees-citizenship/services/immigrate-canada/express-entry/check-score.html",
+      "page_modified": "2026-06-22",
+      "retrieved_at": "2026-09-07T21:16:19.637659+00:00",
+      "sha256": "964b56323438a59a1da024e09cf43439c6bee9717d384563eadfbd4794e5538c",
+      "bytes": 50210
+    },
+    {
+      "source_id": "language-test",
+      "resolved_url": "https://www.canada.ca/en/immigration-refugees-citizenship/services/immigrate-canada/express-entry/documents/language-test.html",
+      "page_modified": "2026-06-22",
+      "retrieved_at": "2026-09-07T21:29:19.517269+00:00",
+      "sha256": "3a261aa0b2086634a37aa6df1f28ecd64354887cccb78a9871100ad7a6795a68",
+      "bytes": 103889
+    },
+    {
+      "source_id": "crs-tool-udit",
+      "resolved_url": "https://ircc.canada.ca/english/immigrate/skilled/crs-tool-udit.js",
+      "retrieved_on": "2026-09-07",
+      "retrieval_time_precision": "date; exact request completion was not recorded, HTTP response Date retained",
+      "sha256": "2dbc3dc028526afd00f5f40a94444594558916485c7a3175cea77bc4e881ac26",
+      "bytes": 70116,
+      "role": "official calculator implementation; comparator evidence only"
+    }
+  ],
+  "retained_local_packet": {
+    "relative_to_operator_home": "capacity-sprint-20260907/canada-crs",
+    "handoff": "HANDOFF.md",
+    "source_manifest_sha256": "8aff015759c1f8748da855ff798366802816b3e9e98a3b149c83209c3fe5794e",
+    "focused_extraction_manifest_sha256": "d867c92e7d05d0488baacb316831968c9b47b806c891b4456124e76853360b88"
+  },
+  "corpus_candidate": {
+    "extractor": "axiom-corpus-ingest extract-official-documents",
+    "full_reference_provision_count": 128,
+    "focused_provision_count": 4,
+    "focused_version": "2026-09-07-ircc-core-spouse-candidate",
+    "focused_provisions_sha256": "56baf5692de20e99c4ad4f406cffdb871b2cfaab3fb5598278a524274df574bb",
+    "coverage_note": "Complete for the declared retained documents/ranges only; not signed release admission or full CRS coverage.",
+    "signed_release": false,
+    "production_activation": false
+  },
+  "independent_case_evidence": {
+    "table_derived_component_cases": 157,
+    "table_cases_sha256": "93e2a18c244ffcf6d7a0502cfa09916def5b61f2400662fa7e5d78289f48110d",
+    "calculator_scored_observations": 19,
+    "calculator_observations_sha256": "5a08e7cd12fcf02e3dff8370770dd93b3a8c923822aeb56e41bfad141f84fe3a",
+    "calculator_expired_evidence_observations": 1,
+    "separate_cap_expiry_and_evidence_cases": 26,
+    "design_cases_sha256": "155d8727fe41054b148c4ee062142b095709adbd9ce293ce03d13e7475c0a816",
+    "provenance_labels": [
+      "table-derived",
+      "instruction-derived",
+      "calculator-observed",
+      "contract-only"
+    ],
+    "axiom_crs_executions": 0,
+    "known_comparator_discrepancy": {
+      "case_id": "single-tcf4",
+      "description": "The live guidance calculator returned zero first-language points at four TCF NCLC-4 bands; the ministerial/explanatory table gives six per ability. Preserve observed output separately from source-derived expectation.",
+      "evidence_note_sha256": "3618cedbfdec5d1b22d930ef5d5df781c2dd400a11c8e4ef53124024047c43f5"
+    }
+  },
+  "toolchain_probe": {
+    "encoder_commit": "1daadad265dc9eaa1ab737df87b453a5e5e0cb46",
+    "rust_engine_commit": "1f824237d43c1234d88fea60c8ac2fa7b9b9da4c",
+    "rust_engine_version": "0.2.2",
+    "offline_focused_rust_tests_passed": 133,
+    "crs_module_generated": false,
+    "blocker": "Missing externally attached trusted signing broker for pinned corpus verification and signed apply; protected supervised runtime absent in the local lane. The new IRCC source also needs genuine signed corpus admission and an immutable release pin.",
+    "source_preflight_log_sha256": "8f9d18420b487ed25aa3dfe40e598058d253591db2a02fc906beb9956157e691",
+    "apply_preflight_log_sha256": "a34dca7c4c8f5394a2abc6196c5914338eac38752142a11948d3c24c3394a846"
+  },
+  "continuation": "Provide the existing protected supervised subscription path, admit and pin the source candidate, generate through axiom-encode encode --apply, then execute independent cases through the actual compiled RuleSpec artifact. No activation is requested."
+}
