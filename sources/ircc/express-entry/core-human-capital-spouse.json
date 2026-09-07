@@ -90,7 +90,7 @@
     "calculator_observations_sha256": "5a08e7cd12fcf02e3dff8370770dd93b3a8c923822aeb56e41bfad141f84fe3a",
     "calculator_expired_evidence_observations": 1,
     "separate_cap_expiry_and_evidence_cases": 26,
-    "design_cases_sha256": "155d8727fe41054b148c4ee062142b095709adbd9ce293ce03d13e7475c0a816",
+    "design_cases_sha256": "ff931fe5fe08f0091220eab7b4a39d7645ded94f141901e3e858f7c660f612a5",
     "provenance_labels": [
       "table-derived",
       "instruction-derived",
@@ -101,7 +101,10 @@
     "known_comparator_discrepancy": {
       "case_id": "single-tcf4",
       "description": "The live guidance calculator returned zero first-language points at four TCF NCLC-4 bands; the ministerial/explanatory table gives six per ability. Preserve observed output separately from source-derived expectation.",
-      "evidence_note_sha256": "3618cedbfdec5d1b22d930ef5d5df781c2dd400a11c8e4ef53124024047c43f5"
+      "evidence_note_sha256": "20f0d72f01bd918803130b47112f9c3e523bbab23cc107b3e2a4b73167f94451",
+      "case_id_mapping": "cases/comparator-discrepancies.json",
+      "case_id_mapping_sha256": "53fec9e24fc22c3f62b0afd7e5706f977e6ae3553095306895b0feb150513f8c",
+      "browser_source_binding_limit": "Browser-loaded JavaScript bytes were not cryptographically bound to the separately fetched JavaScript snapshot."
     }
   },
   "toolchain_probe": {
@@ -110,9 +113,22 @@
     "rust_engine_version": "0.2.2",
     "offline_focused_rust_tests_passed": 133,
     "crs_module_generated": false,
-    "blocker": "Missing externally attached trusted signing broker for pinned corpus verification and signed apply; protected supervised runtime absent in the local lane. The new IRCC source also needs genuine signed corpus admission and an immutable release pin.",
+    "blocker": "Existing /opt/axiom-verification protected supervisor starts. Its source operation fails on the missing pinned corpus release object; its apply preflight requires an externally attached signing broker. New IRCC source admission and pinning remain necessary. Current-versus-installed encoder compatibility and model generation are unverified.",
+    "installed_protected_encoder_version": "0.2.1298",
+    "installed_supervisor_help_exit": 0,
+    "installed_source_probe_exit": 2,
+    "installed_apply_probe_exit": 2,
+    "installed_source_probe_log_sha256": "3f170331f6761188518e431fc3aac97e0afc6d71aea0058098119bac5e107834",
+    "installed_apply_probe_log_sha256": "02c11ebad23fd9d0c46eea165f2c3f3f9c5820a9d097fc8e26134f14c660371e",
     "source_preflight_log_sha256": "8f9d18420b487ed25aa3dfe40e598058d253591db2a02fc906beb9956157e691",
     "apply_preflight_log_sha256": "a34dca7c4c8f5394a2abc6196c5914338eac38752142a11948d3c24c3394a846"
   },
-  "continuation": "Provide the existing protected supervised subscription path, admit and pin the source candidate, generate through axiom-encode encode --apply, then execute independent cases through the actual compiled RuleSpec artifact. No activation is requested."
+  "independent_review": {
+    "status": "one bounded source/runtime review completed; four actionable findings corrected and owner-validated",
+    "review_sha256": "f4b1b8ced1b0c82e110fc13e24fab2b51d119aa04cfd78aebfc7a4dd82ef1a11",
+    "disposition_sha256": "55e2b7525757af36230e758e6e2ea5efaff1858efb524aa5ed1ca166bdf7badb",
+    "offline_packet_checks_passed": 14,
+    "admission_note": "Local review evidence only; no signed admission or replacement of Fable/Sol approval conditions."
+  },
+  "continuation": "Attach the genuine apply signer to the existing protected local subscription path, admit and pin the source candidate, generate through axiom-encode encode --apply, then execute independent cases through the actual compiled RuleSpec artifact. No activation is requested."
 }

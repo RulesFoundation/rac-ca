@@ -32,11 +32,12 @@ experience) plus accompanying spouse factors. It does not implement full CRS,
 skill-transferability or additional points, program eligibility, invitations,
 or admission. Work qualification and documentary evidence require explicit facts.
 
-**No CRS RuleSpec module has been generated or installed.** The current supervised
-encoder fails before generation because this local lane lacks the protected
-signing broker required for corpus verification and signed apply manifests.
-The new IRCC source also needs genuine corpus admission and an immutable release
-pin. Existing release configuration is unchanged. This registry is an unsigned
+**No CRS RuleSpec module has been generated or installed.** The existing protected
+supervisor starts successfully. Its source operation fails because the pinned
+local corpus release object is missing; its apply preflight requires an externally
+attached signing broker. The new IRCC source also needs genuine corpus admission
+and an immutable release pin. Compatibility between the current encoder checkout
+and the older protected installation remains unverified. This registry is an unsigned
 source candidate, not an apply manifest, signed admission or production activation.
 
 The retained local packet `capacity-sprint-20260907/canada-crs` contains official
@@ -58,11 +59,14 @@ The live calculator also produced an apparent TCF NCLC-4 discrepancy: it awarded
 zero first-language points for four TCF bands that IRCC maps to NCLC 4, while the
 ministerial and explanatory point tables give six per ability. The corresponding
 CELPIP/TEF observations gave 24. Preserve the calculator observation separately
-from the source-derived expectation; do not encode it as the legal rule.
+from the source-derived expectation; the packet's case-ID discrepancy mapping
+records observed 0/230 versus source-derived 24/254. Do not encode it as the legal rule.
 
 Validation so far covers source/case integrity and actual Rust execution
 primitives (133 passing focused engine tests), **not an implemented CRS pilot**.
-Continuation requires the existing protected supervised subscription runtime,
+Fourteen offline packet checks pass. One bounded independent source/runtime
+review completed; all four actionable findings were corrected and owner-validated.
+Continuation requires the genuine apply signer on the protected subscription path,
 admitted source release, real encoder apply provenance, and execution of the
 independent cases through the resulting compiled RuleSpec artifact. No historical
 calculator result or signed admission has been fabricated.
